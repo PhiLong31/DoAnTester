@@ -1,16 +1,17 @@
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class Withdraw
-{
-    @FindBy(xpath="//a[.='Withdrawal']")
-    private WebElement withdraw;
+public class FundTransfer {
+    @FindBy(xpath="//a[.='Fund Transfer']")
+    private WebElement fundTrans;
 
-    @FindBy(name="accountno")
-    private WebElement accountno;
+    @FindBy(name="payersaccount")
+    private WebElement payersAcc;
+
+    @FindBy(name="payeeaccount")
+    private WebElement payeesAcc;
 
     @FindBy(name="ammount")
     private WebElement ammount;
@@ -21,27 +22,24 @@ public class Withdraw
     @FindBy(name="AccSubmit")
     private WebElement submit;
 
-    @FindBy(xpath="//td[.='Current Balance']/..//td[2]")
-    private WebElement drawBal;
-
-    public Withdraw(WebDriver d)
+    public FundTransfer(WebDriver d)
     {
         PageFactory.initElements(d, this);
     }
 
-    public WebElement withdraw()
+    public WebElement fundTrans()
     {
-        return withdraw;
+        return fundTrans;
     }
 
-    public WebElement accountno()
+    public WebElement payersAcc()
     {
-        return accountno;
+        return payersAcc;
     }
 
-    public WebElement ammount()
+    public WebElement payeesAcc()
     {
-        return ammount;
+        return payeesAcc;
     }
 
     public WebElement desc()
@@ -54,8 +52,8 @@ public class Withdraw
         return submit;
     }
 
-    public WebElement drawBal()
+    public WebElement ammount()
     {
-        return drawBal;
+        return ammount;
     }
 }
