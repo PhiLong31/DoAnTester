@@ -152,4 +152,16 @@ public class TS_01_newaccount {
         availBal = n.availBal().getText();
         System.out.println("TS_012:" + accountId + availBal);
     }
+    public void TC_017(String customerId){
+        n.newAcc().click();
+        n.custID().sendKeys(customerId);
+        Select acc = new Select(n.accType());
+        acc.selectByVisibleText("Saving");
+        n.iniDeposit().sendKeys("400");
+        n.submit().click();
+        accountId =  n.accID().getText();
+        availBal = n.availBal().getText();
+        System.out.println("TS_001:" + accountId + availBal);
+    }
+
 }

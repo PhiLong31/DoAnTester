@@ -19,6 +19,10 @@ public class NewAccount {
     @FindBy(name="button2")
     private WebElement submit;
 
+
+    @FindBy(name="button3")
+    private WebElement reset;
+
     @FindBy(xpath="//td[.='Account ID']/..//td[2]")
     private WebElement accID;
 
@@ -47,6 +51,11 @@ public class NewAccount {
     public WebElement submit()
     {
         return submit;
+    }
+
+    public WebElement reset()
+    {
+        return reset;
     }
 
     public WebElement accID()

@@ -17,7 +17,7 @@ public class TS_01_customizedstatement {
 
     public void TC_002() {
         customizedStatement.getCustomisedStatement().click();
-        customizedStatement.getAccountNo().sendKeys("93268");
+        customizedStatement.getAccountNo().sendKeys("9326");
         customizedStatement.getFromDate().sendKeys("29052021");
         customizedStatement.getToDate().sendKeys("30052021");
         customizedStatement.getMinimumTransactionValue().sendKeys("1000");

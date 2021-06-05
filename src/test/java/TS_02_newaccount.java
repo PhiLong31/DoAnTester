@@ -15,7 +15,7 @@ public class TS_02_newaccount {
         Select acc = new Select(n.accType());
         acc.selectByVisibleText("Saving");
         n.iniDeposit().sendKeys("");
-        n.submit().click();
+        n.reset().click();
         accountId =  n.accID().getText();
         availBal = n.availBal().getText();
         System.out.println("TS_013:" + accountId + availBal);
@@ -27,7 +27,7 @@ public class TS_02_newaccount {
         Select acc = new Select(n.accType());
         acc.selectByVisibleText("Saving");
         n.iniDeposit().sendKeys("2456");
-        n.submit().click();
+        n.reset().click();
         accountId =  n.accID().getText();
         availBal = n.availBal().getText();
         System.out.println("TS_014:" + accountId + availBal);
@@ -39,7 +39,7 @@ public class TS_02_newaccount {
         Select acc = new Select(n.accType());
         acc.selectByVisibleText("Saving");
         n.iniDeposit().sendKeys("");
-        n.submit().click();
+        n.reset().click();
         accountId =  n.accID().getText();
         availBal = n.availBal().getText();
         System.out.println("TS_015:" + accountId + availBal);
@@ -51,7 +51,7 @@ public class TS_02_newaccount {
         Select acc = new Select(n.accType());
         acc.selectByVisibleText("Saving");
         n.iniDeposit().sendKeys("135788");
-        n.submit().click();
+        n.reset().click();
         accountId =  n.accID().getText();
         availBal = n.availBal().getText();
         System.out.println("TS_016:" + accountId + availBal);

@@ -16,7 +16,7 @@ public class LongMain {
         //Test custom
         CustomizedStatement customizedStatement = new CustomizedStatement(driver);
         TS_01_customizedstatement ts_01_customizedstatement = new TS_01_customizedstatement(customizedStatement);
-        ts_01_customizedstatement.TC_001();
+        ts_01_customizedstatement.TC_006();
         //Test logout
         Logout logout = new Logout(driver);
         TS_01_Logout t = new TS_01_Logout(logout);

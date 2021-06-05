@@ -12,7 +12,7 @@ public class TS_02_customizedstatement {
         customizedStatement.getToDate().sendKeys("20052021");
         customizedStatement.getMinimumTransactionValue().sendKeys("123%$jhdf");
         customizedStatement.getNumberOfTransaction().sendKeys("0");
-        customizedStatement.getSubmit().click();
+        customizedStatement.getReset().click();
     }
 
     public void TC_014() {
@@ -22,7 +22,7 @@ public class TS_02_customizedstatement {
         customizedStatement.getToDate().sendKeys("20052021");
         customizedStatement.getMinimumTransactionValue().sendKeys("123%$jhdf");
         customizedStatement.getNumberOfTransaction().sendKeys("0");
-        customizedStatement.getSubmit().click();
+        customizedStatement.getReset().click();
     }
 
     public void TC_015() {
@@ -32,7 +32,7 @@ public class TS_02_customizedstatement {
         customizedStatement.getToDate().sendKeys("06042021");
         customizedStatement.getMinimumTransactionValue().sendKeys("123%$jhdf");
         customizedStatement.getNumberOfTransaction().sendKeys("0");
-        customizedStatement.getSubmit().click();
+        customizedStatement.getReset().click();
     }
 
     public void TC_016() {
@@ -42,6 +42,6 @@ public class TS_02_customizedstatement {
         customizedStatement.getToDate().sendKeys("");
         customizedStatement.getMinimumTransactionValue().sendKeys("1000");
         customizedStatement.getNumberOfTransaction().sendKeys("");
-        customizedStatement.getSubmit().click();
+        customizedStatement.getReset().click();
     }
 }
