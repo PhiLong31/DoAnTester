@@ -1,11 +1,18 @@
-public class TS_01_newcustomer {
-    private NewCustomer newCustomer;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-    public TS_01_newcustomer(NewCustomer newCustomer){
-        this.newCustomer = newCustomer;
+import java.util.UUID;
+
+public class TS_01_newcustomer extends LeMain{
+
+    public TS_01_newcustomer() throws InterruptedException {
+        setup();
     }
 
-    public void TC_001(String emailid){
+    @Test
+    @DisplayName("TC_001")
+    public void TC_001(){
+        String emailid = UUID.randomUUID().toString().replace("-", "").substring(0,7)+"@gmail.com";
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -20,7 +27,10 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
-    public void TC_002(String emailid){
+    @Test
+    @DisplayName("TC_002")
+    public void TC_002(){
+        String emailid = UUID.randomUUID().toString().replace("-", "").substring(0,7)+"@gmail.com";
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee123");
         newCustomer.female();
@@ -35,7 +45,10 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
-    public void TC_003(String emailid){
+    @Test
+    @DisplayName("TC_003")
+    public void TC_003(){
+        String emailid = UUID.randomUUID().toString().replace("-", "").substring(0,7)+"@gmail.com";
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -50,7 +63,10 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
-    public void TC_004(String emailid){
+    @Test
+    @DisplayName("TC_004")
+    public void TC_004(){
+        String emailid = UUID.randomUUID().toString().replace("-", "").substring(0,7)+"@gmail.com";
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -65,6 +81,8 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
+    @Test
+    @DisplayName("TC_005")
     public void TC_005(){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
@@ -80,7 +98,10 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
-    public void TC_006(String emailid){
+    @Test
+    @DisplayName("TC_006")
+    public void TC_006(){
+        String emailid = UUID.randomUUID().toString().replace("-", "").substring(0,7)+"@gmail.com";
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -95,7 +116,10 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
-    public void TC_007(String emailid){
+    @Test
+    @DisplayName("TC_007")
+    public void TC_007(){
+        String emailid = UUID.randomUUID().toString().replace("-", "").substring(0,7)+"@gmail.com";
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("");
         newCustomer.female();
@@ -110,7 +134,10 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
-    public void TC_008(String emailid){
+    @Test
+    @DisplayName("TC_008")
+    public void TC_008(){
+        String emailid = UUID.randomUUID().toString().replace("-", "").substring(0,7)+"@gmail.com";
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -125,7 +152,10 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
-    public void TC_009(String emailid){
+    @Test
+    @DisplayName("TC_009")
+    public void TC_009(){
+        String emailid = UUID.randomUUID().toString().replace("-", "").substring(0,7)+"@gmail.com";
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -140,6 +170,8 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
+    @Test
+    @DisplayName("TC_0010")
     public void TC_010(){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
@@ -155,6 +187,8 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
+    @Test
+    @DisplayName("TC_0011")
     public void TC_011(String emailid){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee35");
@@ -170,6 +204,8 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
+    @Test
+    @DisplayName("TC_0012")
     public void TC_012(){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
@@ -185,6 +221,8 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
+    @Test
+    @DisplayName("TC_0013")
     public void TC_013(){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("");

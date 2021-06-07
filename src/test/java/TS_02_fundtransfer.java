@@ -1,61 +1,70 @@
-public class TS_02_fundtransfer {
-    private FundTransfer f;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-    public TS_02_fundtransfer(FundTransfer f) {
-        this.f = f;
+public class TS_02_fundtransfer extends TruyenMain{
+
+    public TS_02_fundtransfer() throws InterruptedException {
+        setup();
     }
 
+    @Test
+    @DisplayName("TC_019")
     public void TC_019(String payersAcc, String payeesAcc) {
-        f.fundTrans().click();
-        f.payersAcc().sendKeys("");
-        f.payeesAcc().sendKeys("");
-        f.ammount().sendKeys("");
-        f.desc().sendKeys("");
-        f.reset().click();
+        fundTransfer.fundTrans().click();
+        fundTransfer.payersAcc().sendKeys("");
+        fundTransfer.payeesAcc().sendKeys("");
+        fundTransfer.ammount().sendKeys("");
+        fundTransfer.desc().sendKeys("");
+        fundTransfer.reset().click();
     }
-
+    @Test
+    @DisplayName("TC_020")
     public void TC_020(String payersAcc, String payeesAcc) {
-        f.fundTrans().click();
-        f.payersAcc().sendKeys("93268");
-        f.payeesAcc().sendKeys("");
-        f.ammount().sendKeys("");
-        f.desc().sendKeys("");
-        f.reset().click();
+        fundTransfer.fundTrans().click();
+        fundTransfer.payersAcc().sendKeys("93268");
+        fundTransfer.payeesAcc().sendKeys("");
+        fundTransfer.ammount().sendKeys("");
+        fundTransfer.desc().sendKeys("");
+        fundTransfer.reset().click();
     }
-
+    @Test
+    @DisplayName("TC_021")
     public void TC_021(String payersAcc, String payeesAcc) {
-        f.fundTrans().click();
-        f.payersAcc().sendKeys("93268");
-        f.payeesAcc().sendKeys("93268");
-        f.ammount().sendKeys("@133kh");
-        f.desc().sendKeys("gui");
-        f.reset().click();
+        fundTransfer.fundTrans().click();
+        fundTransfer.payersAcc().sendKeys("93268");
+        fundTransfer.payeesAcc().sendKeys("93268");
+        fundTransfer.ammount().sendKeys("@133kh");
+        fundTransfer.desc().sendKeys("gui");
+        fundTransfer.reset().click();
     }
-
+    @Test
+    @DisplayName("TC_022")
     public void TC_022(String payersAcc, String payeesAcc) {
-        f.fundTrans().click();
-        f.payersAcc().sendKeys("");
-        f.payeesAcc().sendKeys("93268");
-        f.ammount().sendKeys("");
-        f.desc().sendKeys("");
-        f.reset().click();
+        fundTransfer.fundTrans().click();
+        fundTransfer.payersAcc().sendKeys("");
+        fundTransfer.payeesAcc().sendKeys("93268");
+        fundTransfer.ammount().sendKeys("");
+        fundTransfer.desc().sendKeys("");
+        fundTransfer.reset().click();
     }
-
+    @Test
+    @DisplayName("TC_023")
     public void TC_023(String payersAcc, String payeesAcc) {
-        f.fundTrans().click();
-        f.payersAcc().sendKeys("93268");
-        f.payeesAcc().sendKeys("93268");
-        f.ammount().sendKeys("@133kh");
-        f.desc().sendKeys("");
-        f.submit().click();
+        fundTransfer.fundTrans().click();
+        fundTransfer.payersAcc().sendKeys("93268");
+        fundTransfer.payeesAcc().sendKeys("93268");
+        fundTransfer.ammount().sendKeys("@133kh");
+        fundTransfer.desc().sendKeys("");
+        fundTransfer.submit().click();
     }
-
+    @Test
+    @DisplayName("TC_024")
     public void TC_024(String payersAcc, String payeesAcc) {
-        f.fundTrans().click();
-        f.payersAcc().sendKeys("93268");
-        f.payeesAcc().sendKeys("93268");
-        f.ammount().sendKeys("");
-        f.desc().sendKeys("gui");
-        f.submit().click();
+        fundTransfer.fundTrans().click();
+        fundTransfer.payersAcc().sendKeys("93268");
+        fundTransfer.payeesAcc().sendKeys("93268");
+        fundTransfer.ammount().sendKeys("");
+        fundTransfer.desc().sendKeys("gui");
+        fundTransfer.submit().click();
     }
 }

@@ -1,10 +1,14 @@
-public class TS_01_customizedstatement {
-    private CustomizedStatement customizedStatement;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-    public TS_01_customizedstatement(CustomizedStatement customizedStatement) {
-        this.customizedStatement = customizedStatement;
+public class TS_01_customizedstatement extends LongMain {
+
+    public TS_01_customizedstatement() throws InterruptedException {
+        setup();
     }
 
+    @Test
+    @DisplayName("TC_001")
     public void TC_001() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");
@@ -15,6 +19,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_002")
     public void TC_002() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("9326");
@@ -25,6 +31,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_003")
     public void TC_003() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");
@@ -35,6 +43,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_004")
     public void TC_004() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");
@@ -45,6 +55,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_005")
     public void TC_005() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");
@@ -55,6 +67,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_006")
     public void TC_006() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("");
@@ -65,6 +79,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_007")
     public void TC_007() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");
@@ -75,6 +91,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_008")
     public void TC_008() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");
@@ -85,6 +103,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_009")
     public void TC_009() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");
@@ -95,6 +115,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_010")
     public void TC_010() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");
@@ -105,6 +127,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_011")
     public void TC_011() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");
@@ -115,6 +139,8 @@ public class TS_01_customizedstatement {
         customizedStatement.getSubmit().click();
     }
 
+    @Test
+    @DisplayName("TC_012")
     public void TC_012() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");

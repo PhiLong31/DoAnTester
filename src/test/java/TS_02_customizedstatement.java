@@ -1,10 +1,14 @@
-public class TS_02_customizedstatement {
-    private CustomizedStatement customizedStatement;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-    public TS_02_customizedstatement(CustomizedStatement customizedStatement) {
-        this.customizedStatement = customizedStatement;
+public class TS_02_customizedstatement extends LongMain{
+
+    public TS_02_customizedstatement() throws InterruptedException {
+        setup();
     }
 
+    @Test
+    @DisplayName("TC_013")
     public void TC_013() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("93268");
@@ -15,6 +19,8 @@ public class TS_02_customizedstatement {
         customizedStatement.getReset().click();
     }
 
+    @Test
+    @DisplayName("TC_014")
     public void TC_014() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("9326");
@@ -25,6 +31,8 @@ public class TS_02_customizedstatement {
         customizedStatement.getReset().click();
     }
 
+    @Test
+    @DisplayName("TC_015")
     public void TC_015() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("9326");
@@ -35,6 +43,8 @@ public class TS_02_customizedstatement {
         customizedStatement.getReset().click();
     }
 
+    @Test
+    @DisplayName("TC_016")
     public void TC_016() {
         customizedStatement.getCustomisedStatement().click();
         customizedStatement.getAccountNo().sendKeys("");

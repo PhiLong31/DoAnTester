@@ -1,10 +1,14 @@
-public class TS_02_newcustomer {
-    private NewCustomer newCustomer;
+import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Test;
 
-    public TS_02_newcustomer(NewCustomer newCustomer){
-        this.newCustomer = newCustomer;
+public class TS_02_newcustomer extends LeMain{
+
+    public TS_02_newcustomer() throws InterruptedException {
+        setup();
     }
 
+    @Test
+    @DisplayName("TC_0014")
     public void TC_014(){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("");
@@ -20,6 +24,8 @@ public class TS_02_newcustomer {
         newCustomer.submit().click();
     }
 
+    @Test
+    @DisplayName("TC_0015")
     public void TC_015(){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Leeeee");
@@ -35,6 +41,8 @@ public class TS_02_newcustomer {
         newCustomer.submit().click();
     }
 
+    @Test
+    @DisplayName("TC_0016")
     public void TC_016(){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Leeeee");
@@ -50,6 +58,8 @@ public class TS_02_newcustomer {
         newCustomer.submit().click();
     }
 
+    @Test
+    @DisplayName("TC_0017")
     public void TC_017(){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("");

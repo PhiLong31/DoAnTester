@@ -1,11 +1,14 @@
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-import java.util.UUID;
-
 public class LeMain {
-    public static void main(String[] args) throws InterruptedException {
+    private static WebDriver driver;
+    public static NewCustomer newCustomer;
+    public static Deposit deposit;
+
+    public void setup() throws InterruptedException {
         System.setProperty("webdriver.chrome.driver", "resource/chromedriver.exe");
-        ChromeDriver driver = new ChromeDriver();
+        driver = new ChromeDriver();
         driver.get("http://www.demo.guru99.com/V4/");
 
         String username = "mngr328490";
@@ -16,9 +19,12 @@ public class LeMain {
         account.login().click();
         Thread.sleep(2000);
 
-        String emailId = UUID.randomUUID().toString().replace("-", "").substring(0,7)+"@gmail.com";
-        NewCustomer customer = new NewCustomer(driver);
-        TS_01_newcustomer ts1 = new TS_01_newcustomer(customer);
-        ts1.TC_001(emailId);
+        newCustomer = new NewCustomer(driver);
+        deposit = new Deposit(driver);
+    }
+
+    public static void main(String[] args) throws InterruptedException {
+        LeMain leMain = new LeMain();
+        leMain.setup();
     }
 }
