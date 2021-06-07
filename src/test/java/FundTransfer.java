@@ -22,6 +22,10 @@ public class FundTransfer {
     @FindBy(name="AccSubmit")
     private WebElement submit;
 
+    @FindBy(name="AccReset")
+    private WebElement reset;
+
+
     public FundTransfer(WebDriver d)
     {
         PageFactory.initElements(d, this);
@@ -47,10 +51,9 @@ public class FundTransfer {
         return desc;
     }
 
-    public WebElement submit()
-    {
-        return submit;
-    }
+    public WebElement submit() { return submit; }
+
+    public WebElement reset() { return reset; }
 
     public WebElement ammount()
     {

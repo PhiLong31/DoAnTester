@@ -40,7 +40,7 @@ public class TS_01_customizedstatement {
         customizedStatement.getAccountNo().sendKeys("93268");
         customizedStatement.getFromDate().sendKeys("29052021");
         customizedStatement.getToDate().sendKeys("30052021");
-        customizedStatement.getMinimumTransactionValue().sendKeys("999999");
+        customizedStatement.getMinimumTransactionValue().sendKeys("999999999");
         customizedStatement.getNumberOfTransaction().sendKeys("4");
         customizedStatement.getSubmit().click();
     }
@@ -57,7 +57,7 @@ public class TS_01_customizedstatement {
 
     public void TC_006() {
         customizedStatement.getCustomisedStatement().click();
-        customizedStatement.getAccountNo().sendKeys("93268");
+        customizedStatement.getAccountNo().sendKeys("");
         customizedStatement.getFromDate().sendKeys("29052021");
         customizedStatement.getToDate().sendKeys("30052021");
         customizedStatement.getMinimumTransactionValue().sendKeys("20000");

@@ -18,7 +18,7 @@ public class TS_01_fundtransfer {
         f.fundTrans().click();
         f.payersAcc().sendKeys(payersAcc);
         f.payeesAcc().sendKeys(payeesAcc);
-        f.ammount().sendKeys("999999");
+        f.ammount().sendKeys("9999999999");
         f.desc().sendKeys("Gui");
         f.submit().click();
     }

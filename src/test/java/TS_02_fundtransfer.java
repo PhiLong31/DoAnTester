@@ -11,7 +11,7 @@ public class TS_02_fundtransfer {
         f.payeesAcc().sendKeys("");
         f.ammount().sendKeys("");
         f.desc().sendKeys("");
-        f.submit().click();
+        f.reset().click();
     }
 
     public void TC_020(String payersAcc, String payeesAcc) {
@@ -20,7 +20,7 @@ public class TS_02_fundtransfer {
         f.payeesAcc().sendKeys("");
         f.ammount().sendKeys("");
         f.desc().sendKeys("");
-        f.submit().click();
+        f.reset().click();
     }
 
     public void TC_021(String payersAcc, String payeesAcc) {
@@ -29,7 +29,7 @@ public class TS_02_fundtransfer {
         f.payeesAcc().sendKeys("93268");
         f.ammount().sendKeys("@133kh");
         f.desc().sendKeys("gui");
-        f.submit().click();
+        f.reset().click();
     }
 
     public void TC_022(String payersAcc, String payeesAcc) {
@@ -38,7 +38,7 @@ public class TS_02_fundtransfer {
         f.payeesAcc().sendKeys("93268");
         f.ammount().sendKeys("");
         f.desc().sendKeys("");
-        f.submit().click();
+        f.reset().click();
     }
 
     public void TC_023(String payersAcc, String payeesAcc) {
