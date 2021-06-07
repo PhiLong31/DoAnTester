@@ -1,5 +1,7 @@
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class Deposit {
     @FindBy(name = "accountno")
@@ -19,6 +21,11 @@ public class Deposit {
 
     @FindBy(xpath = "//a[.='Deposit']")
     private WebElement deposit;
+
+    public Deposit(WebDriver d)
+    {
+        PageFactory.initElements(d, this);
+    }
 
     public WebElement getDeposit() {
         return deposit;

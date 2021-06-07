@@ -5,7 +5,7 @@ public class TS_01_newcustomer {
         this.newCustomer = newCustomer;
     }
 
-    public void TC_001(){
+    public void TC_001(String emailid){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -15,12 +15,12 @@ public class TS_01_newcustomer {
         newCustomer.state().sendKeys("Viet Nam");
         newCustomer.pin().sendKeys("123456");
         newCustomer.mob().sendKeys("0987873520");
-        newCustomer.emailid().sendKeys("ntnle.18it4@vku.udn.vn");
+        newCustomer.emailid().sendKeys(emailid);
         newCustomer.custpass().sendKeys("13032000");
         newCustomer.submit().click();
     }
 
-    public void TC_002(){
+    public void TC_002(String emailid){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee123");
         newCustomer.female();
@@ -30,12 +30,12 @@ public class TS_01_newcustomer {
         newCustomer.state().sendKeys("Viet Nam@@");
         newCustomer.pin().sendKeys("123456");
         newCustomer.mob().sendKeys("0987873520");
-        newCustomer.emailid().sendKeys("ntnle.18it4@vku.udn.vn");
+        newCustomer.emailid().sendKeys(emailid);
         newCustomer.custpass().sendKeys("13032000");
         newCustomer.submit().click();
     }
 
-    public void TC_003(){
+    public void TC_003(String emailid){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -45,12 +45,12 @@ public class TS_01_newcustomer {
         newCustomer.state().sendKeys("Viet Nam");
         newCustomer.pin().sendKeys("12345");
         newCustomer.mob().sendKeys("0987873520");
-        newCustomer.emailid().sendKeys("ntnle.18it4@vku.udn.vn");
+        newCustomer.emailid().sendKeys(emailid);
         newCustomer.custpass().sendKeys("13032000");
         newCustomer.submit().click();
     }
 
-    public void TC_004(){
+    public void TC_004(String emailid){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -60,7 +60,7 @@ public class TS_01_newcustomer {
         newCustomer.state().sendKeys("Viet Nam");
         newCustomer.pin().sendKeys("123456");
         newCustomer.mob().sendKeys("09878dgh");
-        newCustomer.emailid().sendKeys("ntnle.18it4@vku.udn.vn");
+        newCustomer.emailid().sendKeys(emailid);
         newCustomer.custpass().sendKeys("13032000");
         newCustomer.submit().click();
     }
@@ -80,7 +80,7 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
-    public void TC_006(){
+    public void TC_006(String emailid){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -90,12 +90,12 @@ public class TS_01_newcustomer {
         newCustomer.state().sendKeys("Viet Nam");
         newCustomer.pin().sendKeys("123456");
         newCustomer.mob().sendKeys("0987873520");
-        newCustomer.emailid().sendKeys("ntnle.18it4@vku.udn.vn");
+        newCustomer.emailid().sendKeys(emailid);
         newCustomer.custpass().sendKeys("");
         newCustomer.submit().click();
     }
 
-    public void TC_007(){
+    public void TC_007(String emailid){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("");
         newCustomer.female();
@@ -105,12 +105,12 @@ public class TS_01_newcustomer {
         newCustomer.state().sendKeys("");
         newCustomer.pin().sendKeys("123456");
         newCustomer.mob().sendKeys("0987873520");
-        newCustomer.emailid().sendKeys("ntnle.18it4@vku.udn.vn");
+        newCustomer.emailid().sendKeys(emailid);
         newCustomer.custpass().sendKeys("13032000");
         newCustomer.submit().click();
     }
 
-    public void TC_008(){
+    public void TC_008(String emailid){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -120,12 +120,12 @@ public class TS_01_newcustomer {
         newCustomer.state().sendKeys("Viet Nam");
         newCustomer.pin().sendKeys("");
         newCustomer.mob().sendKeys("0987873520");
-        newCustomer.emailid().sendKeys("ntnle.18it4@vku.udn.vn");
+        newCustomer.emailid().sendKeys(emailid);
         newCustomer.custpass().sendKeys("13032000");
         newCustomer.submit().click();
     }
 
-    public void TC_009(){
+    public void TC_009(String emailid){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee");
         newCustomer.female();
@@ -135,7 +135,7 @@ public class TS_01_newcustomer {
         newCustomer.state().sendKeys("Viet Nam");
         newCustomer.pin().sendKeys("123456");
         newCustomer.mob().sendKeys("");
-        newCustomer.emailid().sendKeys("ntnle.18it4@vku.udn.vn");
+        newCustomer.emailid().sendKeys(emailid);
         newCustomer.custpass().sendKeys("13032000");
         newCustomer.submit().click();
     }
@@ -155,7 +155,7 @@ public class TS_01_newcustomer {
         newCustomer.submit().click();
     }
 
-    public void TC_011(){
+    public void TC_011(String emailid){
         newCustomer.newuser().click();
         newCustomer.usename().sendKeys("Lee35");
         newCustomer.female();
@@ -165,7 +165,7 @@ public class TS_01_newcustomer {
         newCustomer.state().sendKeys("Viet Nam");
         newCustomer.pin().sendKeys("123456");
         newCustomer.mob().sendKeys("0987873520");
-        newCustomer.emailid().sendKeys("ntnle.18it4@vku.udn.vn");
+        newCustomer.emailid().sendKeys(emailid);
         newCustomer.custpass().sendKeys("13032000");
         newCustomer.submit().click();
     }
